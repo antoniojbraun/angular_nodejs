@@ -126,3 +126,264 @@
     at Generator.next (<anonymous>)
     at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-21T23:14:57.635Z, error: Data too long for column 'content' at row 1 |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:795:21)
+    at async Post.save (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:4154:35) *|
+2025-01-22T00:08:10.989Z, error: Function not implemented. |* Error: Function not implemented.
+    at fn (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:97:9)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:16:11
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:4:12)
+    at getAllPostsService (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:25:12)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:17:39
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:8:71 *|
+2025-01-22T00:08:13.425Z, error: Function not implemented. |* Error: Function not implemented.
+    at fn (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:97:9)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:16:11
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:4:12)
+    at getAllPostsService (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:25:12)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:17:39
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:8:71 *|
+2025-01-22T00:11:28.812Z, error: Function not implemented. |* Error: Function not implemented.
+    at fn (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:96:9)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:17:13
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:4:12)
+    at getAllPostsService (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:25:12)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:17:39
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:8:71 *|
+2025-01-22T00:11:50.874Z, error: Function not implemented. |* Error: Function not implemented.
+    at fn (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:96:9)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:17:13
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:4:12)
+    at getAllPostsService (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:25:12)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:17:39
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:8:71 *|
+2025-01-22T00:11:52.350Z, error: Function not implemented. |* Error: Function not implemented.
+    at fn (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:96:9)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:17:13
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:4:12)
+    at getAllPostsService (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/post.service.ts:25:12)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:17:39
+    at Generator.next (<anonymous>)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/post.controller.ts:8:71 *|
+2025-01-22T00:19:24.385Z, error: WHERE parameter "slug" has invalid "undefined" value |* Error: WHERE parameter "slug" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-generator.js:2451:13)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-generator.js:2440:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-generator.js:2438:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-generator.js:2866:19)
+    at MySQLQueryGenerator.selectQuery (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-generator.js:1466:28)
+    at MySQLQueryInterface.select (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:1002:27)
+    at Function.findAll (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1824:47)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Function.findOne (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1998:12) *|
+2025-01-22T01:51:07.787Z, error: Data too long for column 'content' at row 1 |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:795:21)
+    at async Post.save (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:4154:35) *|
+2025-01-22T01:53:15.282Z, error: Data too long for column 'content' at row 1 |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:795:21)
+    at async Post.save (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:4154:35) *|
+2025-01-22T01:53:18.156Z, error: Data too long for column 'content' at row 1 |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:795:21)
+    at async Post.save (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:4154:35) *|
+2025-01-22T01:53:18.882Z, error: Data too long for column 'content' at row 1 |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.insert (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:795:21)
+    at async Post.save (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:4154:35) *|
+2025-01-22T19:37:50.331Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T19:37:58.314Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T19:37:59.469Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:05:45.496Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:05:49.727Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:05:52.246Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:11:01.676Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:11:10.666Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:14:10.412Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:14:58.072Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:19:32.063Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:19:39.899Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:19:50.807Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:20:52.705Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-22T20:20:57.025Z, error: Association with alias "User" does not exist on Comment |* Error: Association with alias "User" does not exist on Comment
+    at Function._transformStringAssociation (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:358:15)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:371:22)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._conformInclude (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:405:16)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:59
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
+    at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
