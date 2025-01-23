@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-6xl font-bold text-center mb-5 leading-tight;
+}
+p {
+  @apply text-xl mb-5 leading-loose text-justify;
+}

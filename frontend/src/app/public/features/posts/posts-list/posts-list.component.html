@@ -1,1 +1,21 @@
-<p>posts-list works!</p>
+<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8">
+  @for(post of posts; track post.id){
+  <div
+    class="bg-white rounded-xl px-10 py-5 shadow-lg hover:shadow-2xl transition-shadow duration-300"
+  >
+    <div class="mb-4">
+      <a
+        [routerLink]="'/post/' + post.slug"
+        class="font-bold text-xl text-gray-800"
+        >{{ post.title }}</a
+      >
+    </div>
+    <div class="underline text-sm text-[#0069ff]">
+      <a href="#">{{ post.user.name }}</a>
+    </div>
+    <div class="mt-1 text-xs text-gray-500">
+      <div>{{ moment(post.createdAt).format("D-MMM-YYYY") }}.</div>
+    </div>
+  </div>
+  }
+</div>

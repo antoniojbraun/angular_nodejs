@@ -1,1 +1,82 @@
-<p>post-detail works!</p>
+@if(post){
+<h1>{{ post.title }}</h1>
+
+<!-- Display category and create date -->
+<div class="flex justify-between mb-10">
+  <p>
+    Category:
+    <a [routerLink]="['/categories/'] + post.category.slug"
+      ><strong>{{ post.category.name }}</strong></a
+    >
+  </p>
+  <p>
+    Created: <strong>{{ moment(post.createdAt).fromNow() }}</strong>
+  </p>
+</div>
+
+<p>{{ post.content }}</p>
+
+<!-- Tags Section -->
+<div class="mt-20">
+  <h2 class="text-2x1">Tags</h2>
+  <div class="flex mt-5">
+    @for(tag of post.tags; track tag){
+    <a
+      [routerLink]="['/tags/' + tag.slug]"
+      class="bg-blue-500 text-white px-4 py-2 mr-2 rounded-md hover:bg-blue-600"
+      >{{ tag.name }}</a
+    >
+    }
+  </div>
+</div>
+
+<!-- Comments section -->
+<div class="mt-20">
+  <h2 class="text-2xl mb-10">Comments</h2>
+  <div class="flex mb-3">
+    <img
+      src="user-avatar.png"
+      alt="Avatar"
+      class="w-10 h-10 rounded-full mr-3"
+    />
+    <textarea
+      name=""
+      id=""
+      class="w-full h-[200px] border-solid border-[1px] border-gray-300 rounded-md p-4 outline-none"
+      placeholder="Enter your comments:"
+    ></textarea>
+  </div>
+
+  <button
+    class="bg-blue-500 text-white px-4 py-2 mb-10 float-right rounded-md hover:bg-blue-600 transition-colors duration-300"
+  >
+    Post Comment
+  </button>
+  @for(comment of post.comments; track comment){
+  <div class="flex w-full gap-y-5 mb-5">
+    <div>
+      <img
+        src="user-avatar.png"
+        alt="Avatar"
+        class="w-10 h-10 rounded-full mr-3"
+      />
+    </div>
+
+    <div class="w-full">
+      <div
+        class="border-[1px] border-solid border-gray-300 grow p-4 rounded-xl"
+      >
+        <div class="font-bold">{{ comment.user.name }}</div>
+        <div class="text-gray-500 mb-2 text-xs">
+          {{ moment(comment.createdAt).format("D-MMM-YYYY") }}
+        </div>
+        <div class="">
+          {{ comment.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</div>
+
+}
