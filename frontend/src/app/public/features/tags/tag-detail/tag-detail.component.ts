@@ -1,6 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { PostsListComponent } from '../../posts/posts-list/posts-list.component';
 import { ActivatedRoute } from '@angular/router';
+import { ITag } from '../../../../core/interfaces/models/tag.model.interface';
+import { TagService } from '../../../../core/services/tag.service';
 
 @Component({
   selector: 'app-tag-detail',
@@ -11,10 +13,20 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TagDetailComponent {
   route = inject(ActivatedRoute);
-  tag = '';
+  tagService = inject(TagService);
+  tag?: ITag;
+
   constructor() {
     this.route.params.subscribe((params) => {
-      this.tag = params['tag'];
+      let tagSlug = params['tag'];
+
+      this.loadTag(tagSlug);
+    });
+  }
+
+  loadTag(tagSlug: string) {
+    this.tagService.getTagBySlug(tagSlug).subscribe((data) => {
+      this.tag = data;
     });
   }
 }

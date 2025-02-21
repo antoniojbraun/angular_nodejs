@@ -4,4 +4,5 @@ export interface ICategory {
   slug: string;
   userId: number;
   createdAt: string;
+  updatedAt: string;
 }

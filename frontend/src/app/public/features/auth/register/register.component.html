@@ -1,1 +1,75 @@
-<p>register works!</p>
+<form (submit)="submit()" class="card w-[400px]" [formGroup]="form">
+  <div>
+    <label for="email">Name</label>
+    <input
+      formControlName="name"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Name"
+    />
+    <!-- Display name errors -->
+    @if( form.get('name')?.touched && form.get('name')?.errors ){
+    @if(form.get('name')?.errors?.['required']){
+    <div class="text-red-500">Name is required</div>
+
+    } }
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input
+      formControlName="email"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Email"
+    />
+    <!-- Display email errors -->
+    @if( form.get('email')?.touched && form.get('email')?.errors ){
+    @if(form.get('email')?.errors?.['required']){
+    <div class="text-red-500">Email is required</div>
+    } @if(form.get('email')?.errors?.['email']){
+    <div class="text-red-500">Email is invalid</div>
+    }}
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input
+      formControlName="password"
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Password"
+    />
+    <!-- Display password  errors -->
+    @if( form.get('password')?.touched && form.get('password')?.errors ){
+
+    <div>
+      @if(form.get('password')?.errors?.['required']){
+      <div class="text-red-500">Password is required.</div>
+      } @if(form.get('password')?.errors?.['minlength']){
+      <div class="text-red-500">
+        Password must be at least
+        {{form.get('password')?.errors?.['minlength'].requiredLength}}
+        characters.
+      </div>
+      } @if(form.get('password')?.errors?.['pattern']){
+      <div class="text-red-500">
+        Password must contain at least one uppercase letter, one lowercase
+        letter, one number and one special character.
+      </div>
+
+      }
+    </div>
+    }
+  </div>
+  <!-- Display password pattern errors -->
+
+  <div class="flex justify-end mt-3">
+    <button [disabled]="!form.valid" type="submit">Register</button>
+  </div>
+  <div class="text-center text-xs mt-4 text-gray-600">
+    Already have an account?
+    <a routerLink="/auth/login" class="font-bold">Login here</a>
+  </div>
+</form>

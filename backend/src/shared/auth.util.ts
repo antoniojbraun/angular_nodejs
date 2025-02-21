@@ -30,19 +30,23 @@ export async function authenticateJWT(
   res: Response,
   next: Function
 ) {
+  // Get token from header
   const token = req.header("Authorization")?.replace("Bearer ", "");
-
+  // Check if token is provided
   if (!token) {
     res.status(401).json({ message: "Access Denied. Token is not provided." });
     return;
   }
+  // Verify token
   const verified = verifyToken(token);
+  // Check if token exists on db
   const tokenExistsOnDb = await getToken(token);
-
+  // Check if token is valid
   if (!verified || !tokenExistsOnDb) {
     res.status(401).json({ message: "Invalid Token" });
     return;
   }
+  // Check if user exists
   User.findByPk((verified as any).userId).then((user) => {
     if (user) {
       (req as any).user = user;

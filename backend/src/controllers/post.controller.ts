@@ -12,9 +12,32 @@ import { generateSlug } from "../shared/general.util";
 import { getCategoryById } from "../services/category.service";
 import { getTagsByIds } from "../services/tag.service";
 import { addPostTags, getPostTags } from "../services/post-tag.service";
+import { User } from "../models/User";
 
 export const getPostsController = async (req: Request, res: Response) => {
-  let posts = await getAllPostsService();
+  // zod schema to accept filters from query variables
+  const schema = z.object({
+    categoryId: z.string().optional(),
+    tagId: z.string().optional(),
+    userId: z.string().optional(),
+  });
+  console.log(req.query);
+
+  // parse the query strings variables
+  const schemaValidator = schema.safeParse(req.query);
+
+  if (!schemaValidator.success) {
+    res
+      .status(400)
+      .json({ message: "Invalid data", errors: schemaValidator.error });
+    return;
+  }
+
+  // get the query strings variables
+  const { categoryId, tagId, userId } = schemaValidator.data;
+  // get all posts
+
+  const posts = await getAllPostsService({ categoryId, tagId, userId });
   res.json(posts);
 };
 
@@ -36,7 +59,6 @@ export const addPostController = async (req: Request, res: Response) => {
   const schema = z.object({
     title: z.string(),
     content: z.string(),
-    userId: z.number(),
     categoryId: z.number(),
     tagIds: array(z.number()).optional(),
   });
@@ -47,7 +69,10 @@ export const addPostController = async (req: Request, res: Response) => {
       .json({ message: "Invalid data", errors: schemaValidator.error });
     return;
   }
-  const { title, content, userId, categoryId, tagIds } = req.body;
+  const { title, content, categoryId, tagIds } = req.body;
+  // Get the user id from the request
+  const user = (req as any).user as User;
+  const userId = user.get("id");
 
   // Check if the tags are valid
   await validateTags(res, tagIds);
@@ -77,7 +102,6 @@ export const updatePostController = async (req: Request, res: Response) => {
     title: z.string().optional(),
     content: z.string().optional(),
     categoryId: z.number().optional(),
-    userId: z.number(),
     tagIds: array(z.number()).optional(),
   });
   const schemaValidator = schema.safeParse(req.body);
@@ -87,7 +111,10 @@ export const updatePostController = async (req: Request, res: Response) => {
       .json({ message: "Invalid data", errors: schemaValidator.error });
     return;
   }
-  let { title, content, id, categoryId, userId, tagIds } = req.body;
+  let { title, content, id, categoryId, tagIds } = req.body;
+  // Get the user id from the request
+  const user = (req as any).user as User;
+  const userId = user.get("id");
 
   // Check if the tags are valid
   await validateTags(res, tagIds);
@@ -153,7 +180,6 @@ export const deletePostController = async (req: Request, res: Response) => {
   // Using zod to validate the data coming from forms
   const schema = z.object({
     id: z.number(),
-    userId: z.number(),
   });
   const schemaValidator = schema.safeParse(req.body);
   if (!schemaValidator.success) {
@@ -162,14 +188,19 @@ export const deletePostController = async (req: Request, res: Response) => {
       .json({ message: "Invalid data", errors: schemaValidator.error });
     return;
   }
-  const { id, userId } = req.body;
+  const { id } = req.body;
+  // Get the user id from the request
+  const user = (req as any).user as User;
+  const userId = user.get("id");
+
+  // Check if the post exist by ID
   const post = await getPostByIdService(id);
-  // Verify if the post exists
+  // Check if the post exist
   if (!post) {
     res.status(400).json({ message: "Post id not found" });
     return;
   }
-  // Verify if the userId give is authorized to delete this post
+  // check if user is autorized to delete the post
   if (post.userId !== userId) {
     res
       .status(400)
@@ -177,6 +208,7 @@ export const deletePostController = async (req: Request, res: Response) => {
     return;
   }
 
+  // delete the post
   const deletedPostById = await deletePostService(id);
   if (deletedPostById == 1) {
     res.status(200).json({ message: "Post deleted sucessfully" });

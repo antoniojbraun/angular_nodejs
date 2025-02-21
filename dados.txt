@@ -1,0 +1,65 @@
+
+******* Backend *******
+
+npm install cors --save-dev @types/cors
+
+
+******* Frontend ******* 
+
+ng generate module posts --routing
+
+ng generate component posts-list
+ng generate component post-detail
+
+ng generate component categories-list
+ng generate component category-detail
+
+ng generate component login
+ng generate component register
+ng generate component forgot-password
+ng generate component reset-password
+
+ng g c tag-detail
+
+ng g c header 
+ng g c footer
+
+ng generate module posts --routing
+ng generate module categories --routing
+ng generate module comments --routing
+ng generate module tags --routing
+
+ng generate c posts-list
+ng generate c post-editor
+
+ng generate c categories-list
+ng generate c category-editor
+
+ng generate c comments-list
+
+ng generate component tags-list
+ng generate component tag-editor
+
+ng generate module public --routing --flat
+ng generate component public --flat
+
+ng generate module admin/admin --routing --flat
+ng generate component admin/admin --flat
+
+ng generate --help - to see all the generate commands
+
+ng generate environments
+
+não esquecer de adicionar provider para HttpClient 
+para lidar com formatação de datas, utilizar biblioteca moment.
+npm install moment --save
+
+ng generate c auth --flat
+
+Para usar o recurso de mostrar algum dado em formato de json no html com o pipe |, precisamos importar
+o CommomModule no componente em questão.
+
+to protect private pages, we use guard auth canActivate from angular
+ng generate guard
+
+// In this project, we do not have an 

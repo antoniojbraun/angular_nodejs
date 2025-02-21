@@ -387,3 +387,165 @@
     at Array.map (<anonymous>)
     at Function._conformIncludes (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:352:39)
     at Function._baseMerge (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:818:10) *|
+2025-01-24T22:20:31.358Z, error: Unknown column 'Post.tagId' in 'where clause' |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.select (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1824:21) *|
+2025-01-24T22:29:23.694Z, error: Unknown column 'Post.tagId' in 'where clause' |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.select (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1824:21) *|
+2025-01-24T22:30:23.354Z, error: Unknown column 'Post.tagId' in 'where clause' |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.select (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1824:21) *|
+2025-01-24T22:31:42.730Z, error: Unknown column 'Post.tagId' in 'where clause' |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.select (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1824:21) *|
+2025-01-24T22:31:52.731Z, error: Unknown column 'Post.tagId' in 'where clause' |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.select (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1824:21) *|
+2025-01-27T15:58:50.401Z, error: User not found. |* Error: User not found.
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:28:15
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:03:00.565Z, error: User not found. |* Error: User not found.
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:28:15
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:05:20.435Z, error: User not found. |* Error: User not found.
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:28:15
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:07:20.496Z, error: User not found. |* Error: User not found.
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:28:15
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:09:15.239Z, error: User not found. |* Error: User not found.
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:28:15
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:09:26.496Z, error: User not found. |* Error: User not found.
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:28:15
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/services/user.service.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:19:22.097Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:119:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:21:36.281Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:119:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:21:48.214Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:119:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:22:00.512Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:119:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:22:54.645Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:119:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:23:10.199Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:119:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:23:45.447Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:124:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:25:53.283Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:124:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:26:34.309Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:124:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-27T16:26:37.813Z, error: Cannot set headers after they are sent to the client |* Error: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:699:11)
+    at ServerResponse.header (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/express/lib/response.js:278:15)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:124:19
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/antoniojosebraun/study/angular_nodejs/backend/src/controllers/auth.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) *|
+2025-01-31T20:48:26.191Z, error: Unknown column 'Comment.DESC' in 'order clause' |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.select (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1824:21) *|
+2025-01-31T20:48:32.909Z, error: Unknown column 'Comment.DESC' in 'order clause' |* Error
+    at Query.run (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async MySQLQueryInterface.select (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/Users/antoniojosebraun/study/angular_nodejs/backend/node_modules/sequelize/src/model.js:1824:21) *|

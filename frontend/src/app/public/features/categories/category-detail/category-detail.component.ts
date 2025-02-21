@@ -1,6 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PostsListComponent } from '../../posts/posts-list/posts-list.component';
+import { CategoryService } from '../../../../core/services/category.service';
+import { ICategory } from '../../../../core/interfaces/models/category.model.interface';
 
 @Component({
   selector: 'app-category-detail',
@@ -11,11 +13,19 @@ import { PostsListComponent } from '../../posts/posts-list/posts-list.component'
 })
 export class CategoryDetailComponent {
   route = inject(ActivatedRoute);
-  category = '';
+  categoryService = inject(CategoryService);
+  category?: ICategory;
+
   constructor() {
     this.route.params.subscribe((params) => {
-      console.log(params);
-      this.category = params['category'];
+      let categorySlug = params['category'];
+      this.loadCategory(categorySlug);
+    });
+  }
+
+  loadCategory(categorySlug: string) {
+    this.categoryService.getCategoryBySlug(categorySlug).subscribe((data) => {
+      this.category = data;
     });
   }
 }

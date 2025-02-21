@@ -1,10 +1,17 @@
 <div class="bg-white border-b-[1px] h-[70px]">
   <div class="container m-auto flex justify-between h-full items-center">
-    <a [routerLink]="'/'" class="text-2xl font-bold text-[#0069ff]">My Blog</a>
+    <a [routerLink]="'/'" class="text-2xl font-bold text-[var(--primary)]">My Blog</a>
     <div class="space-x-10 text-gray-600">
       <a href="/home">Home</a>
       <a href="/about">About</a>
       <a href="/contact">Contact</a>
+      @if(!authService.session){
+      <a routerLink="/auth/login" class="cta">Login</a>
+      }@else {
+
+      <button (click)="authService.logout()" class="cta">Logout</button>
+
+      }
     </div>
   </div>
 </div>

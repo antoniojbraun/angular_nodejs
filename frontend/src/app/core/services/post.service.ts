@@ -11,8 +11,22 @@ export class PostService {
   httpClient = inject(HttpClient);
   constructor() {}
 
-  getPosts() {
-    return this.httpClient.get<IPost[]>(this.backUrl);
+  getPosts(filters: { categoryId?: number; tagId?: number; userId?: number }) {
+    // convert every filter to a query parameter and apend to the url
+
+    let url = this.backUrl;
+    const params = new URLSearchParams();
+    if (filters.categoryId) {
+      let categoryId = filters.categoryId.toString();
+      params.set('categoryId', categoryId);
+    }
+    if (filters.tagId) {
+      let tagId = filters.tagId.toString();
+      params.set('tagId', tagId);
+    }
+
+    url += '?' + params.toString();
+    return this.httpClient.get<IPost[]>(url);
   }
 
   getPostBySlug(slug: string) {

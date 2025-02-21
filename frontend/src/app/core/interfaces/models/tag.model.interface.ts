@@ -3,4 +3,6 @@ export interface ITag {
   name: string;
   slug: string;
   userId: number;
+  createdAt: string;
+  updatedAt: string;
 }

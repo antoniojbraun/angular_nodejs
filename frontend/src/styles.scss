@@ -3,9 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  // primary color
+  --primary: #0069ff;
+}
 h1 {
   @apply text-6xl font-bold text-center mb-5 leading-tight;
 }
 p {
   @apply text-xl mb-5 leading-loose text-justify;
 }
+
+.cta {
+  @apply py-2 px-4 bg-[var(--primary)] text-gray-50 rounded-md shadow-md hover:bg-[var(--primary)] transition-colors duration-200;
+}
+
+// Decorator @apply is used to apply the css style in all child components.
